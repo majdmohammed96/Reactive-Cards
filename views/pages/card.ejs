@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/26c469c759.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="../static/css/main.23de1ed8.chunk.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="cards">
+      <section class="cards_box js-card_box palette">
+        <div class="cards_box-border js-border"></div>
+        <div class="cards-box--text">
+          <h2 class="cards_box--text--title js-preview-name">
+            <%=name%>
+            <!-- {/* para pintar en la card preview */}
+              {props.data.name === "" ? "Nombre Apellidos" : props.data.name} -->
+          </h2>
+          <h2 class="cards_box--text--subtitle js-preview-job">
+            <%=job%>
+            <!-- {props.data.job === "" ? "Front-End Developer" : props.data.job} -->
+          </h2>
+        </div>
+        <div
+          style="background-image: url(<%=photo%>)"
+          class="cards_box-photo js__profile-preview"
+        ></div>
+        <ul class="cards_box-socialmedia">
+          <li class="cards_box-socialmedia--item">
+            <a class="js-preview-mail" href="mailto:<%=email%>">
+              <i class="far fa-envelope cards_box-icon-social js-social"></i>
+            </a>
+          </li>
+
+          <li class="cards_box-socialmedia--item">
+            <a class="js-preview-phone" href="tel: <%=phone%>">
+              <i
+                class="
+                  fas
+                  fa-mobile-alt
+                  cards_box-icon-social
+                  js-preview-phone js-social
+                "
+              ></i>
+            </a>
+          </li>
+
+          <li class="cards_box-socialmedia--item">
+            <a
+              class="js-preview-linkedin target=_blank"
+              href="https://linkedin.com/in/<%=linkedin%>"
+            >
+              <i class="fab fa-linkedin-in cards_box-icon-social js-social"></i>
+            </a>
+          </li>
+
+          <li class="cards_box-socialmedia--item">
+            <a
+              class="js-preview-github target=_blank"
+              href="https://github.com/<%=github%>"
+            >
+              <i class="fab fa-github-alt cards_box-icon-social js-social"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>

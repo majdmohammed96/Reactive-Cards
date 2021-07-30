@@ -1,0 +1,22 @@
+.header-cards {
+  background-color: $white-three;
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  //padding-top: 31px;
+  padding-left: 3%;
+  background-color: $white-three; 
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+
+  &_logo {
+    width: 150px;
+    // height: 50px;
+    /*@media (min-width: 768px) {
+      margin-left: 40px;
+    }*/
+  }
+}
