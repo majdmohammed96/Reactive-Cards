@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mas/public_html/pro.m-as.biz
+    - /bin/cp * $DEPLOYPATH
